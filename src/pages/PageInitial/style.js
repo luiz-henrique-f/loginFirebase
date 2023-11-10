@@ -71,16 +71,22 @@ const styles = StyleSheet.create({
     textAlign: "center",
     marginTop: 10,
   },
+  finaleTitle: {
+    fontSize: 10,
+    textAlign: "center",
+    marginBottom: 10,
+  },
   buttonLink: {
     marginHorizontal: 75,
     marginTop: 20,
     paddingVertical: 8,
     borderRadius: 10,
-
+    backgroundColor: "#008000",
+  },
+  buttonTextLink: {
     color: "#fff",
     fontWeight: "600",
     textTransform: "uppercase",
-    backgroundColor: "#008000",
     textAlign: "center",
   },
 });

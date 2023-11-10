@@ -1,5 +1,5 @@
 import React from "react";
-import { View, FlatList, Text, KeyboardAvoidingView, TextInput, TouchableOpacity, ScrollView } from "react-native";
+import { View, FlatList, Text, KeyboardAvoidingView, TextInput, TouchableOpacity, ScrollView, Linking } from "react-native";
 import { signOut } from "firebase/auth";
 import { auth } from "../../config/firebase";
 import styles from "./style";
@@ -55,15 +55,14 @@ export default function PageInitial({ navigation }) {
               letters, as opposed to using 'Content here, content here', making it look like readable English
             </Text>
 
-            <Text style={styles.buttonLink}>Ir para o site</Text>
+            <TouchableOpacity style={styles.buttonLink} onPress={() => Linking.openURL('https://oeco.org.br/category/noticias/')}><Text style={styles.buttonTextLink}>Ir para site</Text></TouchableOpacity>
           </Card.Content>
         </Card>
-
         <Card style={styles.cardsInterval}>
           <Card.Cover style={styles.cardImage} source={{ uri: "https://picsum.photos/700" }} />
 
           <Card.Content>
-            <Text style={styles.cardTitle}>Título 2</Text>
+            <Text style={styles.cardTitle}>Título 1</Text>
 
             <Text style={styles.cardText} variant="titleLarge">
               {"\t"}t is a long established fact that a reader will be distracted by the readable content of a page when
@@ -71,15 +70,14 @@ export default function PageInitial({ navigation }) {
               letters, as opposed to using 'Content here, content here', making it look like readable English
             </Text>
 
-            <Text style={styles.buttonLink}>Ir para o site</Text>
+            <TouchableOpacity style={styles.buttonLink} onPress={() => Linking.openURL('https://oeco.org.br/category/noticias/')}><Text style={styles.buttonTextLink}>Ir para site</Text></TouchableOpacity>
           </Card.Content>
         </Card>
-
         <Card style={styles.cardsInterval}>
           <Card.Cover style={styles.cardImage} source={{ uri: "https://picsum.photos/700" }} />
 
           <Card.Content>
-            <Text style={styles.cardTitle}>Título 3</Text>
+            <Text style={styles.cardTitle}>Título 1</Text>
 
             <Text style={styles.cardText} variant="titleLarge">
               {"\t"}t is a long established fact that a reader will be distracted by the readable content of a page when
@@ -87,15 +85,14 @@ export default function PageInitial({ navigation }) {
               letters, as opposed to using 'Content here, content here', making it look like readable English
             </Text>
 
-            <Text style={styles.buttonLink}>Ir para o site</Text>
+            <TouchableOpacity style={styles.buttonLink} onPress={() => Linking.openURL('https://oeco.org.br/category/noticias/')}><Text style={styles.buttonTextLink}>Ir para site</Text></TouchableOpacity>
           </Card.Content>
         </Card>
-
         <Card style={styles.cardsInterval}>
           <Card.Cover style={styles.cardImage} source={{ uri: "https://picsum.photos/700" }} />
 
           <Card.Content>
-            <Text style={styles.cardTitle}>Título 4</Text>
+            <Text style={styles.cardTitle}>Título 1</Text>
 
             <Text style={styles.cardText} variant="titleLarge">
               {"\t"}t is a long established fact that a reader will be distracted by the readable content of a page when
@@ -103,15 +100,14 @@ export default function PageInitial({ navigation }) {
               letters, as opposed to using 'Content here, content here', making it look like readable English
             </Text>
 
-            <Text style={styles.buttonLink}>Ir para o site</Text>
+            <TouchableOpacity style={styles.buttonLink} onPress={() => Linking.openURL('https://oeco.org.br/category/noticias/')}><Text style={styles.buttonTextLink}>Ir para site</Text></TouchableOpacity>
           </Card.Content>
         </Card>
-
         <Card style={styles.cardsInterval}>
           <Card.Cover style={styles.cardImage} source={{ uri: "https://picsum.photos/700" }} />
 
           <Card.Content>
-            <Text style={styles.cardTitle}>Título 5</Text>
+            <Text style={styles.cardTitle}>Título 1</Text>
 
             <Text style={styles.cardText} variant="titleLarge">
               {"\t"}t is a long established fact that a reader will be distracted by the readable content of a page when
@@ -119,15 +115,14 @@ export default function PageInitial({ navigation }) {
               letters, as opposed to using 'Content here, content here', making it look like readable English
             </Text>
 
-            <Text style={styles.buttonLink}>Ir para o site</Text>
+            <TouchableOpacity style={styles.buttonLink} onPress={() => Linking.openURL('https://oeco.org.br/category/noticias/')}><Text style={styles.buttonTextLink}>Ir para site</Text></TouchableOpacity>
           </Card.Content>
         </Card>
-
         <Card style={styles.cardsInterval}>
           <Card.Cover style={styles.cardImage} source={{ uri: "https://picsum.photos/700" }} />
 
           <Card.Content>
-            <Text style={styles.cardTitle}>Título 6</Text>
+            <Text style={styles.cardTitle}>Título 1</Text>
 
             <Text style={styles.cardText} variant="titleLarge">
               {"\t"}t is a long established fact that a reader will be distracted by the readable content of a page when
@@ -135,15 +130,14 @@ export default function PageInitial({ navigation }) {
               letters, as opposed to using 'Content here, content here', making it look like readable English
             </Text>
 
-            <Text style={styles.buttonLink}>Ir para o site</Text>
+            <TouchableOpacity style={styles.buttonLink} onPress={() => Linking.openURL('https://oeco.org.br/category/noticias/')}><Text style={styles.buttonTextLink}>Ir para site</Text></TouchableOpacity>
           </Card.Content>
         </Card>
-
         <Card style={styles.cardsInterval}>
           <Card.Cover style={styles.cardImage} source={{ uri: "https://picsum.photos/700" }} />
 
           <Card.Content>
-            <Text style={styles.cardTitle}>Título 7</Text>
+            <Text style={styles.cardTitle}>Título 1</Text>
 
             <Text style={styles.cardText} variant="titleLarge">
               {"\t"}t is a long established fact that a reader will be distracted by the readable content of a page when
@@ -151,9 +145,11 @@ export default function PageInitial({ navigation }) {
               letters, as opposed to using 'Content here, content here', making it look like readable English
             </Text>
 
-            <Text style={styles.buttonLink}>Ir para o site</Text>
+            <TouchableOpacity style={styles.buttonLink} onPress={() => Linking.openURL('https://oeco.org.br/category/noticias/')}><Text style={styles.buttonTextLink}>Ir para site</Text></TouchableOpacity>
           </Card.Content>
         </Card>
+
+        <Text style={styles.finaleTitle}>Todos os direitos reservados</Text>
       </ScrollView>
     </View>
   );
