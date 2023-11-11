@@ -22,7 +22,7 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: "#dbdbdb",
+    backgroundColor: "#fff",
   },
   containerConteudo: {
     flex: 1,
@@ -65,6 +65,7 @@ const styles = StyleSheet.create({
   },
   cardText: {
     // paddingTop: 5,
+    textAlign: "justify",
   },
   initialTittle: {
     fontSize: 25,
@@ -82,8 +83,6 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     borderRadius: 10,
     backgroundColor: "#008000",
-  },
-  buttonTextLink: {
     color: "#fff",
     fontWeight: "600",
     textTransform: "uppercase",

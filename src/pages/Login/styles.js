@@ -45,7 +45,7 @@ const styles = StyleSheet.create({
     },
     warningAlert: {
         padding: 10,
-        color: "#bdbdbd",
+        color: "#c00",
         fontSize: 16
     },
     registration: {
@@ -55,7 +55,40 @@ const styles = StyleSheet.create({
     linkSubscribe: {
         color: "#1877f2",
         fontSize: 16,
-    }
+    },
+    formContainer: {
+        display: "flex",
+        flexDirection: "row",
+    },
+    iconForm: {
+        position: "relative",
+        top: 26,
+        borderBottomWidth: 1,
+        borderBottomColor: "#008000",
+        marginBottom: 26,
+    },
+    iconTree: {
+        position: "absolute",
+        opacity: 0.16,
+    },
+    iconBackground1: {
+        position: "absolute",
+        bottom: -45,
+        left: -50,
+        opacity: 0.1,
+    },
+    iconBackground2: {
+        position: "absolute",
+        transform: [{rotate: "180deg"}],
+        top: -150,
+        opacity: 0.1,
+    },
+    iconBackground22: {
+        position: "absolute",
+        transform: [{rotate: "180deg"}],
+        top: -130,
+        opacity: 0.06,
+    },
 });
 
 export default styles

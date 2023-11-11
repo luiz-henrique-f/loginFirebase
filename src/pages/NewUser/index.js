@@ -26,22 +26,33 @@ export default function NewUser({ navigation }) {
 
   return (
     <KeyboardAvoidingView behavior={Platform.OS === "ios" ? "padding" : "height"} style={styles.container}>
+      <MaterialCommunityIcons name="rss" size={200} color="#008000" style={styles.iconBackground1} />
+      <MaterialCommunityIcons name="cloud" size={400} color="#008000" style={styles.iconBackground2} />
+      <MaterialCommunityIcons name="cloud" size={400} color="#008000" style={styles.iconBackground22} />
       <Text style={styles.title}>Crie sua conta</Text>
-      <TextInput
-        style={styles.input}
-        placeholder="Informe seu e-mail"
-        type="text"
-        onChangeText={(text) => setEmail(text)}
-        value={email}
-      />
-      <TextInput
-        style={styles.input}
-        secureTextEntry={true}
-        placeholder="Informe sua senha"
-        type="text"
-        onChangeText={(text) => setPassword(text)}
-        value={password}
-      />
+
+      <View style={styles.formContainer}>
+        <MaterialCommunityIcons name="email" size={20} color="#ccc" style={styles.iconForm} />
+        <TextInput
+          style={styles.input}
+          placeholder="Informe seu e-mail"
+          type="text"
+          onChangeText={(text) => setEmail(text)}
+          value={email}
+        />
+      </View>
+
+      <View style={styles.formContainer}>
+        <MaterialCommunityIcons name="key-variant" size={20} color="#ccc" style={styles.iconForm} />
+        <TextInput
+          style={styles.input}
+          secureTextEntry={true}
+          placeholder="Informe sua senha"
+          type="text"
+          onChangeText={(text) => setPassword(text)}
+          value={password}
+        />
+      </View>
       {errorRegister === true ? (
         <View style={styles.contentAlert}>
           <MaterialCommunityIcons name="alert-circle" size={24} color="#bdbdbd" />
